@@ -1,39 +1,30 @@
 package java_assignment_practice;
 
-
 import java.util.Scanner;
-
-
 
 public class problem_5 {
 
+	public static void main(String[] args) {
+		double  tax = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your CTC: ");
 
+		double CTC = sc.nextDouble();
 
-public static void main(String[] args) {
-double it,tax=0;
-Scanner sc = new Scanner(System.in);
-System.out.println("Enter your CTC: ");
+		if (CTC <= 180000)
+			tax = 0;
 
-double CTC=sc.nextDouble();
+		else if (CTC <= 300000)
+			tax = (CTC * 0.1);
 
-if(CTC<=180000)
-tax=0;
+		else if (CTC <= 500000)
+			tax = (CTC * 0.2);
 
-else if(CTC<=300000)
-tax=(CTC*0.1);
+		else
+			tax = (CTC * 0.3);
 
-else if(CTC<=500000)
-tax=(CTC*0.2);
+		System.out.println("CTC tax amount is " + tax);
 
-else
-tax=(CTC*0.3);
-
-System.out.println("CTC tax amount is "+tax);
-
-
-
-}
-
-
+	}
 
 }
