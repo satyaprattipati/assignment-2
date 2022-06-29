@@ -1,4 +1,4 @@
-package java_assignment_practice;
+package data_structure_assignment;
 
 public class problem_2 {
 
