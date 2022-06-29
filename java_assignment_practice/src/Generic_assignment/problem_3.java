@@ -12,7 +12,7 @@ public class problem_3{
 
 	public static void main(String[] args) {
 		String[] names = {"A","B","C"};
-		System.out.println("Before Swap:"+Arrays.toString(names));
+		System.out.println("Before Swap:" + Arrays.toString(names));
 		swap(names,0,2);
 		System.out.println("After  Swap:"+Arrays.toString(names));
 	}
